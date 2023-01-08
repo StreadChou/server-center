@@ -1,0 +1,23 @@
+{
+    "name": "server-center",
+    "repository": "https://github.com/StreadChou/server-center.git",
+    "author": "stread.chou <stread.chou@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "backend:dev": "yarn workspace backend start:dev",
+        "backend:build": "yarn workspace backend build",
+        "frontend:dev": "yarn workspace frontend dev",
+        "frontend:build": "yarn workspace frontend build",
+        "start": "yarn workspace backend start:prod",
+        "start:update": "git pull && yarn install && yarn run frontend:build && yarn run backend:build && yarn run start"
+    },
+    "devDependencies": {
+    },
+    "dependencies": {
+    }
+}
