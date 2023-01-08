@@ -13,8 +13,7 @@
         "backend:build": "yarn workspace backend build",
         "frontend:dev": "yarn workspace frontend dev",
         "frontend:build": "yarn workspace frontend build",
-        "start": "yarn workspace backend start:prod",
-        "start:update": "git pull && yarn install && yarn run frontend:build && yarn run backend:build && yarn run start"
+        "start": "yarn workspace backend start:prod"
     },
     "devDependencies": {
     },
